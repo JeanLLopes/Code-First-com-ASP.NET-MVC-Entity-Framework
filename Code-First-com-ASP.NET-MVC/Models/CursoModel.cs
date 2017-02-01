@@ -8,12 +8,12 @@ namespace Code_First_com_ASP.NET_MVC.Models
 {
     public class CursoModel
     {
-        public int CursoId { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
-        public int UniversidadeId { get; set; }
+        public int UniversidadeID { get; set; }
 
 
-        [ForeignKey("UniversidadeId")]
+        [ForeignKey("UniversidadeID")]
         public virtual UniversidadeModel Universidade { get; set; }
     }
 }
